@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Options - Simple UBQ Ticker</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h3 class="text-muted">Simple UBQ Ticker</h3>
+    </div>
+    <div class="row marketing">
+        <div class="col-lg-12">
+            <div id="formInfo" class="alert alert-dismissable hide">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            </div>
+            <form id="formOptions" role="form">
+                
+                <div class="form-group">
+                    <label for="inputRefreshTime">Refresh Time: (1000ms ~ 3000000ms)</label>
+                    <input type="text" name="refresh_time" class="form-control" id="inputRefreshTime" placeholder="15000">
+                </div>
+                <div class="form-group">
+                    <button id="btnSaveOptions" type="submit" class="btn btn-primary">Save Options</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+    <div class="header">
+        <h3 class="text-muted">Notify When Price will Be : </h3>
+    </div>
+    <div class="row marketing">
+        <div class="col-lg-12">
+            <div id="formInfo" class="alert alert-dismissable hide">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            </div>
+            <form id="formNotifications" role="form">
+                
+                <div class="form-group">
+                    <label for="selectType">Choose type</label>
+                    <select id="selectType" class="form-control">
+                        <option value=">=">Greather than or equals</option>
+                        <option value="<=">Less than or equals</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label for="rate">Rate</label>
+                    <input type="text" name="rate" class="form-control" id="rate" placeholder="0.0001">
+                </div>
+                <div class="form-group">
+                    <div id="btnSaveNotification"  class="btn btn-primary">Save Notification</div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Value</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="notificationsList">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="javascripts/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="javascripts/options.js"></script>
+</body>
+</html>
+

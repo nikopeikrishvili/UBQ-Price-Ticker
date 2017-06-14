@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+
+    "name": "Simple UBIQ Ticker",
+    "description": "This extension shows latest price ticker of popular UBQ trading markets.",
+    "version": "0.1",
+
+    "browser_action": {
+        "default_icon": "images/ubq.png"
+
+    },
+ "permissions": [
+    "notifications"
+  ],
+  "web_accessible_resources": [
+    "images/ubq.png"
+  ],
+    "background": {
+        "persistent": true,
+        "page": "background.html"
+    },
+
+    "options_page": "options.html"
+}
