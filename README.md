@@ -8,8 +8,8 @@ Enable Developer Mode, Click "Load Unpacked Extension..."
 Select the "src" folder in this repository.
 
 # Futures
-1) Controll refresh time
-2) add notifications to price change
+1. Controll refresh time
+2. add notifications to price change
 
 
 
